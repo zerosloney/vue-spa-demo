@@ -1,0 +1,30 @@
+<div class="container container-login">
+    <header class="heading heading-login">
+        <h1><img class="大白" src="images/logo.png"></h1>
+    </header>
+    <fieldset id="js-form" class="form">
+        <form class="js-validate" data-check-phone="true" method="post">
+            <div class="ui-cells form-mobile">
+                <div class="ui-cell">
+                    <div class="ui-cell_hd">+86</div>
+                    <div class="ui-cell_bd">
+                        <input id="js-phone" name="phone" v-model="phone" type="number" placeholder="手机号" pattern="[0-9]*" data-rule-required="true" data-rule-isMobile="true" class="ui-input" data-msg-required="请填写手机号" >
+                    </div>
+                </div>
+            </div>
+            <div class="ui-cells form-code">
+                <div class="ui-cell">
+                    <div class="ui-cell_bd">
+                        <input type="text" class="ui-input" name="code" v-model="code" placeholder="手机验证码" data-rule-required="true" data-msg-required="请填写手机验证码">
+                    </div>
+                    <div class="ui-cell_hd">
+                        <button id="js-get-code" class="button" type="button" data-rule-required="true" data-bind='click: send'>发送验证码</button>
+                        <span class="hide" id="js-countdown"><time id="js-second">60</time>秒后重发</span>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="js-check-button ui-btn ui-btn_big ui-btn_default" v-on:click="login">登录</button>
+        </form>
+    </fieldset>
+</div>
+<div id="js-tooltips" class="ui-toptips ui-warn" style="display: none;"></div>

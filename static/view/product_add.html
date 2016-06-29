@@ -1,0 +1,27 @@
+﻿<div class="container">
+    <fieldset class="form">
+        <form class="js-validate" data-type="inline" action="admin-products.html" method="post">
+            <div class="form-item">
+                <div class="item item-text">
+                    <label class="for" for="product_name">
+                        名称
+                    </label>
+                    <div class="input">
+                        <input type="text" name="product_name" v-model="product.productName" placeholder="请输入商品名称" data-rule-required="true" >
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="item item-text">
+                    <label class="for" for="product_price">
+                        价格
+                    </label>
+                    <div class="input">
+                        <input type="text" name="product_price" v-model="product.productPrice" placeholder="请输入商品价格" data-rule-required="true" data-rule-number="true" data-rule-min="0.1">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="js-check-button ui-btn ui-btn_big ui-btn_default" v-on:click="save(product)">确定发布</button>
+        </form>
+    </fieldset>
+</div>

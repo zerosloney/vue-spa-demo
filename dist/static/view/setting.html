@@ -1,0 +1,37 @@
+﻿<div class="container">
+    <fieldset class="form">
+        <form class="js-validate" data-type="inline" method="post">
+            <div class="form-item">
+                <div class="item item-text">
+                    <label class="for" for="name">
+                        名称
+                    </label>
+                    <div class="input">
+                        <input type="text" name="name" placeholder="" data-rule-required="true" v-model="nickname">
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="item item-text">
+                    <label class="for" for="tel">
+                        电话
+                    </label>
+                    <div class="input">
+                        <input type="text" name="tel" placeholder="" data-rule-required="true" data-rule-isMobile="true" v-model="phone">
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="item item-text">
+                    <label class="for" for="address">
+                        地址
+                    </label>
+                    <div class="input">
+                        <input type="text" name="address" placeholder="" data-rule-required="true" v-model="address">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="js-check-button ui-btn ui-btn_big ui-btn_default" v-on:click="save">保存</button>
+        </form>
+    </fieldset>
+</div>

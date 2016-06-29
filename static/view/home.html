@@ -1,0 +1,60 @@
+<div class="container">
+    <header class="user-info">
+        <img class="avatar" src="images/avatar.png">
+        <h1>{{nickname}}</h1>
+        <p><img class="js-svg" src="images/svg/mobile.svg"><label>{{phone}}</label></p>
+    </header>
+
+    <section class="user-meta">
+        <div class="item">
+            收益：<strong>{{money}}</strong>元
+        </div>
+        <div class="item">
+            会员：<strong>{{followers}}</strong>位
+        </div>
+    </section>
+
+    <section class="ui-media_box ui-media_small_appmsg user-navi">
+        <nav class="ui-cells ui-cells_access">
+            <a v-link="{ path: '/coupon' }" class="ui-cell">
+                <div class="ui-cell_hd">
+                    <img src="images/icon-1.png">
+                </div>
+                <div class="ui-cell_bd ui-cell_primary">
+                    <p>优惠券</p>
+                </div>
+                <span class="ui-cell_ft">{{coupons}}</span>
+            </a>
+
+            <a v-link="{ path: '/order' }" class="ui-cell">
+                <div class="ui-cell_hd">
+                    <img src="images/icon-2.png">
+                </div>
+                <div class="ui-cell_bd ui-cell_primary">
+                    <p>订单</p>
+                </div>
+                <span class="ui-cell_ft">{{orders}}</span>
+            </a>
+
+            <a v-link="{ path: '/product' }" class="ui-cell">
+                <div class="ui-cell_hd">
+                    <img src="images/icon-3.png">
+                </div>
+                <div class="ui-cell_bd ui-cell_primary">
+                    <p>商品</p>
+                </div>
+                <span class="ui-cell_ft">{{products}}</span>
+            </a>
+
+            <a  v-link="{ path: '/setting' }"  class="ui-cell">
+                <div class="ui-cell_hd">
+                    <img src="images/icon-4.png">
+                </div>
+                <div class="ui-cell_bd ui-cell_primary">
+                    <p>设置</p>
+                </div>
+                <span class="ui-cell_ft"></span>
+            </a>
+        </nav>
+    </section>
+</div>

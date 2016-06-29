@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<path d="M14,16H2C0.897,16,0,15.1029997,0,14V2C0,0.897,0.897,0,2,0h12c1.1029997,0,2,0.897,2,2 v12C16,15.1029997,15.1029997,16,14,16z M2,2v12h12.0014849L14,2H2z"/>
+</g>
+<g>
+	<circle cx="8" cy="6" r="2"/>
+</g>
+<g>
+	<path d="M13,13H3v-0.3993998C3,10.6120996,4.6120849,9,6.6005845,9h2.7988 C11.3878841,9,13,10.6120996,13,12.6006002V13z"/>
+</g>
+</svg>

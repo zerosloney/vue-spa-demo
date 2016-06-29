@@ -1,0 +1,26 @@
+﻿<div class="container" v-show="$route.path.indexOf('edit') == -1">
+    <header class="header">
+        <div class="content">
+            <h1><a class="link" v-link="{ path: '/product/edit' }"><i class="icon-css-plus"></i>添加新商品</a></h1>
+        </div>
+    </header>
+
+    <section class="js-disabled-list ui-media_box ui-media_small_appmsg products-list">
+        <div class="ui-cells ui-cells_access" v-for="item in products">
+            <div class="ui-cell js-remove-item js-item">
+                <span class="js-disabled"><img class="js-svg" src="images/svg/view.svg"></span>
+                <div class="ui-cell_bd ui-cell_primary">
+                    <h2> {{ item.productName }}</h2>
+                </div>
+                <div class="content">
+                    <span class="price">{{ item.productPrice }}</span>
+                    <a v-on:click="go(item)" class="edit"><img src="images/edit.png"></a>
+                    <span class="remove js-remove" v-on:click="remove(item)"><img src="images/remove.png"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<router-view></router-view>
+
+
